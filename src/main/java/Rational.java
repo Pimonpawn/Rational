@@ -104,7 +104,7 @@ class Rational {
         r.simplestForm();
         if (this.numerator == r.numerator && this.denominator == r.denominator) {
             return 0;
-        } else if ((numerator * r.denominator) != (r.numerator * denominator)) {
+        } else if ((numerator * r.denominator) < (r.numerator * denominator)) {
             return -1;
         } else {
             return 1;
